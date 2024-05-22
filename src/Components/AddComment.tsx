@@ -7,6 +7,8 @@ import PostButton from "./Low Level Components/PostButton";
 
 import { useState } from "react";
 
+import imgUrls from "../imgUrls.ts";
+
 type AddCommentProps =
   | { type: "comment" }
   | {
@@ -72,10 +74,10 @@ function AddComment(props: AddCommentProps) {
         onChange={(e) => setText(e.target.value)}
       />
       <picture>
-        <source srcSet={currentUser.image.webp} type="image/webp" />
+        <source srcSet={imgUrls[currentUser.image.webp]} type="image/webp" />
         <img
           className="add-comment__image"
-          src={currentUser.image.png}
+          src={imgUrls[currentUser.image.png]}
           alt={`${currentUser.username}'s Profile Image`}
         />
       </picture>

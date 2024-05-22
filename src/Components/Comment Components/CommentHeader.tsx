@@ -5,6 +5,8 @@ import { useCurrentUser } from "../../Hooks/useCurrentUser";
 
 import { memo } from "react";
 
+import imgUrls from "../../imgUrls";
+
 interface CommentHeaderProps {
   user: {
     image: {
@@ -25,10 +27,10 @@ const CommentHeader = memo(function CommentHeader({
   return (
     <header className="comment__header">
       <picture>
-        <source srcSet={user.image.webp} type="image/webp" />
+        <source srcSet={imgUrls[user.image.webp]} type="image/webp" />
         <img
           className="comment__image"
-          src={user.image.png}
+          src={imgUrls[user.image.png]}
           alt={`${user.username}'s Profile Image`}
         />
       </picture>

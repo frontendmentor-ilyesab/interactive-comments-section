@@ -4,6 +4,6 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "interactive-comments-section",
+  base: "/interactive-comments-section",
   plugins: [react(), svgr()],
 })
