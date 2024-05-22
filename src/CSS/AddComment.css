@@ -1,0 +1,35 @@
+.add-comment {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  & .textarea {
+    flex: 100%;
+  }
+
+  & .add-comment__image {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .add-comment {
+    padding: 1.5rem;
+    align-items: start;
+    flex-wrap: nowrap;
+    & .textarea {
+      order: 2;
+      flex: 1;
+    }
+
+    & .add-comment__image {
+      order: 1;
+    }
+  }
+}

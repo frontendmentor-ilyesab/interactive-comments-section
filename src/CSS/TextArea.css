@@ -1,0 +1,17 @@
+& .textarea {
+  border: 1px solid var(--light-gray);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.2rem;
+  min-height: 100px;
+  resize: none;
+
+  &::placeholder {
+    color: var(--gray-blue);
+  }
+}
+
+.textarea:is(:hover, :focus, :active) {
+  border-color: var(--dark-blue);
+  color: var(--dark-blue);
+  cursor: pointer;
+}

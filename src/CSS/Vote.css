@@ -1,0 +1,34 @@
+/* Vote Component Styling */
+.vote {
+  background-color: var(--very-light-gray);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+  grid-area: vote;
+  justify-self: start;
+
+  & .vote__score {
+    color: var(--moderate-blue);
+    font-weight: 500;
+  }
+
+  & button {
+    background: none;
+    border: none;
+  }
+
+  & button:is(:hover, :focus, :active) svg path {
+    cursor: pointer;
+    fill: var(--moderate-blue);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .vote {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.75rem;
+  }
+}

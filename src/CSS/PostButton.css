@@ -1,0 +1,21 @@
+.post-button {
+  background-color: var(--moderate-blue);
+  background-origin: border-box;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 0.75rem 1.75rem;
+  font-weight: 500;
+}
+
+.post-button:is(:hover, :focus, :active) {
+  background-color: var(--light-gray-blue);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .post-button {
+    order: 3;
+  }
+}

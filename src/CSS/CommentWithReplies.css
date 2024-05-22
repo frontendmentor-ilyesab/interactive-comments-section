@@ -1,0 +1,15 @@
+/* CommentWithReplies Component Styling */
+.replies {
+  border-left: 3px solid var(--light-gray);
+  padding-left: calc(1rem - 3px);
+  display: grid;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .replies {
+    margin-left: calc(1.5rem + 16px - 1.5px);
+    padding-left: calc(1.5rem + 16px - 1.5px);
+    gap: 1.25rem;
+  }
+}
