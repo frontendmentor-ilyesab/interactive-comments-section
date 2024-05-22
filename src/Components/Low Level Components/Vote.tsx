@@ -32,11 +32,19 @@ function Vote({ id, parentId, score }: VoteProps) {
   }
   return (
     <div className="vote">
-      <button onClick={handleIncrement} className="vote__plus-button">
+      <button
+        aria-label="upvote comment"
+        onClick={handleIncrement}
+        className="vote__plus-button"
+      >
         <PlusIcon />
       </button>
       <span className="vote__score">{score}</span>
-      <button onClick={handleDecrement} className="vote__minus-button">
+      <button
+        aria-label="downvote comment"
+        onClick={handleDecrement}
+        className="vote__minus-button"
+      >
         <MinusIcon />
       </button>
     </div>

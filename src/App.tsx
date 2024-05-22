@@ -16,6 +16,7 @@ function App() {
 
   return (
     <main className="main">
+      <h1 className="visually-hidden">Interactive Comments Section</h1>
       {content}
       <AddComment type="comment" />
     </main>
