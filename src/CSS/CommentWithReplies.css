@@ -6,10 +6,17 @@
   gap: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .replies {
+    margin-left: calc(1rem + 16px - 3px);
+    padding-left: calc(1rem + 16px - 3px);
+  }
+}
+
 @media screen and (min-width: 992px) {
   .replies {
-    margin-left: calc(1.5rem + 16px - 1.5px);
-    padding-left: calc(1.5rem + 16px - 1.5px);
+    margin-left: calc(1.5rem + 16px - 3px);
+    padding-left: calc(1.5rem + 16px - 3px);
     gap: 1.25rem;
   }
 }

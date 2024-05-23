@@ -54,3 +54,15 @@ body {
   white-space: nowrap;
   width: 1px;
 }
+
+@media screen and (max-width: 374px) {
+  #root {
+    padding: 2rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #root {
+    padding: 4rem 2rem;
+  }
+}
